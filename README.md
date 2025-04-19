@@ -46,7 +46,7 @@ vmware-migration-gcp/
 - Image: CentOS 7
 - Firewall: ✅ Allow HTTP traffic
 
-📸 `images/vm-running.png`
+![VM Running](./images/vm-running.png)
 
 ---
 
@@ -56,8 +56,8 @@ vmware-migration-gcp/
 bash scripts/install_services.sh
 ```
 
-📸 `images/nginx-running.png`  
-📸 `images/mysql-running.png`
+![Nginx Running](./images/nginx-running.png) 
+![MySQL Running](./images/mysql-running.png)
 
 ---
 
@@ -65,7 +65,7 @@ bash scripts/install_services.sh
 
 Create a firewall rule in GCP VPC to allow TCP port `3306`.
 
-📸 `images/firewall-mysql.png`
+![Firewall Rule](./images/firewall-mysql.png)
 
 ---
 
@@ -73,7 +73,7 @@ Create a firewall rule in GCP VPC to allow TCP port `3306`.
 
 Take a disk snapshot of the running VM.
 
-📸 `images/snapshot-created.png`
+![Snapshot Created](./images/snapshot-created.png)
 
 ---
 
@@ -83,7 +83,7 @@ Create a second VM using the snapshot as boot disk:
 
 - Name: `rhel-migration-restored`
 
-📸 `images/restored-vm.png`
+![Restored VM](./images/restored-vm.png)
 
 ---
 
@@ -93,7 +93,7 @@ Create a second VM using the snapshot as boot disk:
 - MySQL is already running
 - No reinstallation/config needed
 
-📸 `images/uptime-success.png`
+![Uptime Verified](./images/uptime-success.png)
 
 ---
 
